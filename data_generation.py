@@ -1,30 +1,24 @@
-"""Libraries"""
+"""Bundle d'imports partagé par training.ipynb (from data_generation import *)."""
 
-### ML/DL
-import tensorflow as tf
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import train_test_split 
-
-### Statistics/maths
+# Standard library
 import math
-
-### Python tools
 import os
+import random
 import re
-
-### Python objects/plots
-import matplotlib.pyplot as plt
-import pandas as pd
-from scipy import signal
-import numpy as np
 from collections import defaultdict
 
-
-### Pytorch
+# Third-party
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import tensorflow as tf
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.utils.data import DataLoader, TensorDataset
-import random
 import torchvision
+from scipy import signal
+from sklearn.decomposition import PCA
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
+from torch.utils.data import DataLoader, TensorDataset
 from torchvision.transforms import v2
